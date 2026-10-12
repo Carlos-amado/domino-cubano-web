@@ -3,26 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DominoCubano Online - Beta</title>
+    <meta name="description" content="DominoCubano Online - Jugá dominó cubano con personas reales.">
+    <title>DominoCubano Online - Beta 1.2.0</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Fondo con gradiente sutil -->
     <div class="background-gradient"></div>
 
     <main class="container">
-        <!-- HEADER -->
         <header class="header">
             <img src="assets/logo.png" alt="DominoCubano" class="logo-image">
             <h1 class="title">DominoCubano</h1>
             <p class="subtitle">El dominó cubano, ahora en tu teléfono</p>
-            <div class="badge">Beta abierta</div>
+            <div class="badge">Beta 1.2.0</div>
         </header>
 
-        <!-- CARD PRINCIPAL -->
         <section class="card card-download">
             <div class="card-icon">
                 <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -33,9 +31,9 @@
             </div>
             <h2>Descargar la App</h2>
             <p class="card-description">
-                Jugá dominó cubano online con personas reales. Creá mesas, retá a tus amigos 
-                y subí en el ranking. Esta es la primera versión de prueba, así que tu opinión 
-                es clave para mejorar el juego.
+                Jugá dominó cubano online con personas reales. Creá mesas, chateá con tus rivales 
+                y subí en el ranking. Ahora con <strong>Modo Entrenamiento</strong> contra la CPU 
+                para practicar cuando quieras.
             </p>
             
             <a href="domino-cubano.apk" download class="btn-download">
@@ -50,23 +48,51 @@
             <div class="meta-info">
                 <span class="meta-item">
                     <span class="meta-label">Versión</span>
-                    <span class="meta-value">1.0.0-beta</span>
+                    <span class="meta-value">1.2.0-beta</span>
                 </span>
                 <span class="meta-divider"></span>
                 <span class="meta-item">
                     <span class="meta-label">Tamaño</span>
-                    <span class="meta-value">3.94 MB</span>
+                    <span class="meta-value">3.97 MB</span>
                 </span>
             </div>
         </section>
 
-        <!-- CARD DE FEATURES -->
+        <section class="card card-novedades">
+            <div class="novedades-badge">NUEVO EN 1.2.0</div>
+            <h2>¿Qué hay de nuevo?</h2>
+            <div class="novedades-list">
+                <div class="novedad-item">
+                    <div class="novedad-icon">🎯</div>
+                    <div class="novedad-info">
+                        <strong>Modo Entrenamiento</strong>
+                        <p>Jugá contra la CPU en todos los modos y afiná tu estrategia sin presión.</p>
+                    </div>
+                </div>
+                <div class="novedad-item">
+                    <div class="novedad-icon">💬</div>
+                    <div class="novedad-info">
+                        <strong>Chat en partidas</strong>
+                        <p>Hablá con tus rivales mientras juegan. ¡La mesa está viva!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section class="card card-features">
             <h2>¿Qué incluye?</h2>
             <ul class="features-list">
                 <li>
                     <span class="feature-check">✓</span>
-                    <span>Mesas de 2, 3 y 4 jugadores</span>
+                    <span>Mesas de 2, 3 y 4 jugadores (individual o por equipos)</span>
+                </li>
+                <li>
+                    <span class="feature-check">✓</span>
+                    <span>Modo Entrenamiento contra la CPU, sin conexión</span>
+                </li>
+                <li>
+                    <span class="feature-check">✓</span>
+                    <span>Chat en tiempo real dentro de las partidas</span>
                 </li>
                 <li>
                     <span class="feature-check">✓</span>
@@ -78,12 +104,11 @@
                 </li>
                 <li>
                     <span class="feature-check">✓</span>
-                    <span>Reporta bugs directamente desde la app</span>
+                    <span>Reportá bugs directamente desde la app</span>
                 </li>
             </ul>
         </section>
 
-        <!-- CARD DE INSTRUCCIONES -->
         <section class="card card-instructions">
             <h2>Cómo instalar</h2>
             <ol class="steps-list">
@@ -118,9 +143,39 @@
             </ol>
         </section>
 
-        <!-- FOOTER -->
+        <section class="card card-versiones">
+            <h2>Historial de versiones</h2>
+            <p class="card-description">
+                Solo la versión más reciente está permitida para jugar online.
+                Si tenés una versión antigua, actualizá para seguir compitiendo.
+            </p>
+            <div class="tabla-wrapper">
+                <table class="tabla-versiones">
+                    <thead>
+                        <tr>
+                            <th>Versión</th>
+                            <th>Estado</th>
+                            <th>Novedades</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="version-actual">
+                            <td><strong>1.2.0-beta</strong></td>
+                            <td><span class="estado-actual">✅ Disponible</span></td>
+                            <td>Entrenamiento + Chat</td>
+                        </tr>
+                        <tr class="version-vieja">
+                            <td>1.0.0-beta</td>
+                            <td><span class="estado-vieja">⛔ Descontinuada</span></td>
+                            <td>Beta inicial</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
         <footer class="footer">
-            <p>Hecho en Cuba 🇨🇺 · Reporta bugs desde la app</p>
+            <p>Hecho en Cuba 🇨🇺 · Reportá bugs desde la app</p>
         </footer>
     </main>
 </body>

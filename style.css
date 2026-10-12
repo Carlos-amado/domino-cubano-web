@@ -257,6 +257,68 @@ body {
 }
 
 /* ════════════════════════════════════════════════════════════
+   CARD DE NOVEDADES
+   ════════════════════════════════════════════════════════════ */
+.card-novedades {
+    background: linear-gradient(180deg, rgba(255, 213, 79, 0.06) 0%, rgba(5, 14, 26, 0.6) 100%);
+    border: 1px solid rgba(255, 213, 79, 0.25);
+}
+
+.novedades-badge {
+    display: inline-block;
+    padding: 4px 10px;
+    background: rgba(255, 213, 79, 0.15);
+    border: 1px solid rgba(255, 213, 79, 0.4);
+    border-radius: 6px;
+    font-size: 10px;
+    font-weight: 700;
+    color: var(--gold);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+}
+
+.novedades-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 4px;
+}
+
+.novedad-item {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+}
+
+.novedad-icon {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 213, 79, 0.1);
+    border: 1px solid rgba(255, 213, 79, 0.3);
+    border-radius: 12px;
+    font-size: 20px;
+}
+
+.novedad-info strong {
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 2px;
+}
+
+.novedad-info p {
+    font-size: 13px;
+    color: var(--text-secondary);
+    line-height: 1.5;
+}
+
+/* ════════════════════════════════════════════════════════════
    FEATURES
    ════════════════════════════════════════════════════════════ */
 .features-list {
@@ -336,6 +398,73 @@ body {
 }
 
 /* ════════════════════════════════════════════════════════════
+   HISTORIAL DE VERSIONES
+   ════════════════════════════════════════════════════════════ */
+.tabla-wrapper {
+    overflow-x: auto;
+    margin-top: 8px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.tabla-versiones {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+}
+
+.tabla-versiones thead {
+    background: rgba(255, 213, 79, 0.08);
+}
+
+.tabla-versiones th {
+    text-align: left;
+    padding: 12px 14px;
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--gold);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    border-bottom: 1px solid rgba(255, 213, 79, 0.15);
+}
+
+.tabla-versiones td {
+    padding: 12px 14px;
+    color: var(--text-secondary);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+    vertical-align: middle;
+}
+
+.tabla-versiones tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.tabla-versiones tbody tr.version-actual {
+    background: rgba(102, 187, 106, 0.06);
+}
+
+.tabla-versiones tbody tr.version-actual td strong {
+    color: var(--gold);
+    font-weight: 700;
+}
+
+.tabla-versiones tbody tr.version-vieja {
+    opacity: 0.65;
+}
+
+.estado-actual {
+    color: var(--success);
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.estado-vieja {
+    color: #94A3B8;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+/* ════════════════════════════════════════════════════════════
    FOOTER
    ════════════════════════════════════════════════════════════ */
 .footer {
@@ -372,8 +501,10 @@ body {
 }
 
 .card-download { animation-delay: 0.1s; }
+.card-novedades { animation-delay: 0.15s; }
 .card-features { animation-delay: 0.2s; }
 .card-instructions { animation-delay: 0.3s; }
+.card-versiones { animation-delay: 0.4s; }
 
 /* ════════════════════════════════════════════════════════════
    RESPONSIVE
@@ -400,5 +531,26 @@ body {
     .btn-download {
         padding: 16px 20px;
         font-size: 15px;
+    }
+
+    .tabla-versiones th,
+    .tabla-versiones td {
+        padding: 10px 10px;
+        font-size: 12px;
+    }
+
+    .tabla-versiones th {
+        font-size: 10px;
+    }
+
+    .estado-actual,
+    .estado-vieja {
+        font-size: 11px;
+    }
+
+    .novedad-icon {
+        width: 36px;
+        height: 36px;
+        font-size: 18px;
     }
 }
